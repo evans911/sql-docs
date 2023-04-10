@@ -97,7 +97,11 @@ GO
   
 -- Try to insert an explicit ID value of 3.  
 INSERT INTO dbo.Tool (ID, Name) VALUES (3, 'Garden shovel');  
-GO  
+GO 
+
+-- SET IDENTITY_INSERT to OFF.  
+SET IDENTITY_INSERT dbo.Tool OFF;  
+GO 
   
 SELECT *   
 FROM dbo.Tool;  
